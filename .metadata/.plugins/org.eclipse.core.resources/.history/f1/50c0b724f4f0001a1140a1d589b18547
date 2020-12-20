@@ -1,0 +1,16 @@
+
+public class Employee {
+private int empId;
+private String name;
+private int salary;
+
+public Employee() {
+	
+}
+public Employee(int id, String name, int salary) {
+	empId = id;
+	this.name = name;
+	this.salary = salary;
+			
+}
+}

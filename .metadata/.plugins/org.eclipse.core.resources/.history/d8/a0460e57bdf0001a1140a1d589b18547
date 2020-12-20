@@ -1,0 +1,16 @@
+package Abstract_and_Wrapper;
+
+public class JavaStringBuffer {
+public static void main(String[] args) {
+	StringBuffer buffer = new StringBuffer("Java Programming");
+	buffer.append("MMIT");
+	
+	
+	String str = new String("Java Programming");
+	str.concat("MMIT");
+	
+	System.out.println("String buffer: "+buffer);
+	System.out.println("String: "+str);
+}
+
+}

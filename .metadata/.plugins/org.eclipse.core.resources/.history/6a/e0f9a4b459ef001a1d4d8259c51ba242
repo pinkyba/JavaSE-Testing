@@ -1,0 +1,14 @@
+package String_Assignment;
+
+class myClass {
+    public static void main( String args[] ) {
+    	int i =1;
+      label:
+      
+        if (i==3)
+        {
+          break label; //skips 3
+        }
+        
+    }
+}

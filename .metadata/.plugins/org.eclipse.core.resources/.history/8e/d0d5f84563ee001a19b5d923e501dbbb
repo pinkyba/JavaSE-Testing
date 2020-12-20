@@ -1,0 +1,62 @@
+package inheritance_assignment;
+
+public class Testing {
+public static void main(String[] args) {
+	Employee emp[] = new Employee[5];
+	//Staff staff = new Staff();
+	//Teacher teacher = new Teacher();
+	
+	for (int i=0; i<5; i++) {
+		if(i <= 3 ) {
+			emp[i] = new Teacher();
+		}
+		else {
+			emp[i] = new Staff();
+		}
+	}
+	
+	for (int i=0; i<5; i++) {
+		if(i <=3 ) {
+			System.out.println("Student data info "+(i+1));
+			emp[i].initializeInfo();
+		}
+		else {
+			System.out.println("Student data info "+(i+1));
+			emp[i].initializeInfo();
+		}
+	}
+	
+	for (int i=0; i<5; i++) {
+		if(i <= 3 ) {
+			System.out.println("Student data List "+(i+1));
+			emp[i].displayInformation();
+		}
+		else {
+			System.out.println("Student data List "+(i+1));
+			emp[i].displayInformation();
+		}
+	}
+	/*emp[0] = new Teacher();
+	emp[1] = new Teacher();
+	emp[2] = new Teacher();
+	emp[3] = new Staff();
+	emp[4] = new Staff();
+	
+	emp[0].initializeInfo();
+	
+	emp[1].initializeInfo();
+	
+	emp[2].initializeInfo();
+	
+	emp[3].initializeInfo();
+	
+	emp[4].initializeInfo();
+	
+	
+	emp[0].displayInformation();
+	emp[1].displayInformation();
+	emp[2].displayInformation();
+	emp[3].displayInformation();
+	emp[4].displayInformation();*/
+}
+}

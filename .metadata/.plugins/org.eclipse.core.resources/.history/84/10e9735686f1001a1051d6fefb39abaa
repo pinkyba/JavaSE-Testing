@@ -1,0 +1,12 @@
+import java.util.*;
+public class JavaHashMap {
+public static void main(String[] args) {
+	HashMap map = new HashMap();
+	map.put("Kyaw Kyaw", 200);
+	map.put(20000, "Aung Aung");
+	
+	map.get("Kyaw Kyaw");
+	map.get(20000);
+	
+}
+}

@@ -1,0 +1,28 @@
+package inheritance_assignment;
+
+import java.util.Scanner;
+
+public class Staff extends Employee{
+	private String jobDetail;
+
+	public String getJobDetail() {
+		return jobDetail;
+	}
+
+	public void setJobDetail(String jobDetail) {
+		this.jobDetail = jobDetail;
+	}
+	public void initializeInfo() {
+		super.initializeInfo();
+		
+		System.out.println("This is Staff initialize info");
+		Scanner input = new Scanner(System.in);
+		System.out.println("Enter job detail: ");	
+		input.close();
+		}
+	public void displayInformation() {
+		super.displayInformation();
+		System.out.println("This Staff display info");
+		
+	}
+}

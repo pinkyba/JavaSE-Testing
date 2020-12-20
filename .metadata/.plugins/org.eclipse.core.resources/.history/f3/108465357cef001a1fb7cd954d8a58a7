@@ -1,0 +1,14 @@
+package javainterface;
+
+public interface People {
+	public static final String name = "";
+	void initializeData();
+	
+	static void showData() {
+		System.out.println("This is static method");
+	}
+	default void setNrc() {
+		System.out.println("This is default method");
+	}
+	
+}

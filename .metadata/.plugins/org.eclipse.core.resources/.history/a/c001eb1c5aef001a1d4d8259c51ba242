@@ -1,0 +1,19 @@
+package String_Assignment;
+
+class myClass {
+    public static void main( String args[] ) {
+    	int i =1;
+      label:{
+      System.out.println("oefoeoi");
+        if (i==3)
+        {
+           System.out.println("fejofoekfoekfokeokf");
+        }
+        else {
+        	
+        	break label;
+        }
+        }
+        
+    }
+}

@@ -1,0 +1,59 @@
+package ArrayListAssignment;
+
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.Collections;
+import java.util.*;
+
+public class CollectionAssignment {
+public static void main(String[] args) {
+	String stuName;
+	String stuK = null;
+	
+	ArrayList<String> nameList = new ArrayList<String>();
+	String names[] = {"Hla Hla","Thida","Nilar","Moe Moe", "Kyaw Kyaw", "Aung Aung", "Htet Htet", "Zay Gyi"};
+	
+	// change names array to array list
+	List<String> lst = Arrays.asList(names);
+	
+	nameList.addAll(lst);
+	System.out.println("Original array list: "+nameList);
+	
+	Collections.sort(nameList);
+	System.out.println("Sorted array list: "+nameList);
+	
+	Scanner input = new Scanner(System.in);
+	System.out.print("Enter student name you want to search: ");
+	stuName = input.nextLine();
+	if(nameList.contains(stuName)) {
+		System.out.println(stuName+" is at the postition "+(nameList.indexOf(stuName)+1));
+	}
+	else {
+		System.out.println("Your search data is not found.");
+	}
+	
+	System.out.print("Enter a student name that you want to insert: ");
+	stuName = input.nextLine();
+	if (nameList.contains(stuName)) {
+		System.out.println(stuName+" is already exit.");
+	}
+	else {
+		nameList.add(stuName);
+		System.out.println("Inserted array list: "+nameList);
+	}
+	
+	for (int i=0; i<nameList.size(); i++) {
+		if (nameList.get(i).startsWith("K") || nameList.get(i).startsWith("k")) {
+			stuK = nameList.get(i)+", ";
+		}
+	}
+	System.out.println("Name List start with K or k: "+stuK);
+	
+	for (int i=0; i<nameList.size(); i++) {
+		if (nameList.get(i).endsWith("K") || nameList.get(i).endsWith("k")) {
+			nameList.remove(i)
+		}
+	}
+	System.out.println("Name List start with K or k: "+stuK);
+}
+}

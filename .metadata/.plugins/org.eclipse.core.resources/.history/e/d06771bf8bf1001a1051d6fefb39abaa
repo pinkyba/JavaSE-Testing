@@ -1,0 +1,24 @@
+import java.util.HashMap;
+import java.util.Scanner;
+
+public class HashMapWithCustomObject {
+public static void main(String[] args) {
+	HashMap<Integer, Employee> map = new HashMap<>();
+	
+	
+	Scanner sc = new Scanner(System.in);
+	for (int i=0; i<3; i++) {
+		Employee e = new Employee();
+		System.out.println("Enter empId: ");
+		e.setEmpId(sc.nextInt());
+		sc.nextLine();
+		System.out.println("Enter name: ");
+		e.setName(sc.nextLine());
+		System.out.println("Enter empId: ");
+		e.setSalary(sc.nextInt());
+		sc.nextLine();
+		
+		map.put(e.getEmpId(), e);
+	}
+}
+}

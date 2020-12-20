@@ -1,0 +1,11 @@
+package inheritance_assignment;
+
+public class Testing {
+public static void main(String[] args) {
+	Employee emp[] = new Employee[5];
+	Staff staff = new Staff();
+	Teacher teacher = new Teacher();
+	
+	emp[0] = 
+}
+}

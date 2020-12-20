@@ -1,0 +1,41 @@
+package String_Assignment;
+
+import java.util.Scanner;
+
+public class Assignment1 {
+
+	private static Object String;
+
+	public static void main(String[] args) {
+		
+		String str1;
+		String str2;
+		int count=0;
+		String result;
+		
+		Scanner input = new Scanner(System.in);	
+		label:{
+		System.out.println("Enter the two string with same length.");
+		System.out.print("Enter string 1: ");
+		str1 = input.nextLine();
+		System.out.print("Enter string 2: ");
+		str2 = input.nextLine();
+		
+		if (str1.length() == str2.length()) {
+			for(char ch1: str1.toCharArray()) {
+				for(char ch2: str2.toCharArray()) {
+					if(ch1 == ch2) {
+						result += ch1+","; 
+						count += 1;
+					}
+				}
+			}
+		}
+		else {
+			break label;
+		}
+		
+		}
+	}
+
+}

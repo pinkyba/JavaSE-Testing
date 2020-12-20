@@ -1,0 +1,15 @@
+package String_Assignment;
+
+class myClass {
+    public static void main( String args[] ) {
+      label:
+      for (int i=0;i<6;i++)
+      {
+        if (i==3)
+        {
+          continue label; //skips 3
+        }
+        System.out.println(i);
+      }
+    }
+}

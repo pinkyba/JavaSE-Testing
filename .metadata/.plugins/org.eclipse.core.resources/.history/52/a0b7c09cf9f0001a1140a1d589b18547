@@ -1,0 +1,11 @@
+package ArrayListAssignment;
+
+import java.util.*;
+
+public class Testing {
+public static void main(String[] args) {
+	ArrayList<Employee> empList = new ArrayList<Employee>();
+	
+	empList.add(new Employee(200, "Aung Aung", 400000))
+}
+}

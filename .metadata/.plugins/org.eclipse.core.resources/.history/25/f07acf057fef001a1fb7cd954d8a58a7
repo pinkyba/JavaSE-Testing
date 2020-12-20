@@ -1,0 +1,11 @@
+package Interface;
+
+public class Testing {
+public static void main(String[] args) {
+	// People p = new People(); //cannot create object of implement class
+	
+	People p = new Student();
+	//p.showData(); // cannot access own method of child class(Student)
+	People.showData();
+}
+}

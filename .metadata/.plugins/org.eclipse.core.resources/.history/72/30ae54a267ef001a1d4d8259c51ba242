@@ -1,0 +1,14 @@
+package String_Assignment;
+
+import java.util.Scanner;
+
+public class Assignment4 {
+public static void main(String[] args) {
+	String nrc;
+	Scanner input = new Scanner(System.in);
+	
+	nrc = input.nextLine();
+	int sIndex = nrc.indexOf("/");
+	int eIndex = nrc.indexOf("(");
+}
+}

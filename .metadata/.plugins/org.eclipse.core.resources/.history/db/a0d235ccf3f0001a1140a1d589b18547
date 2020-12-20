@@ -1,0 +1,31 @@
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
+
+public class GenericArrayList {
+public static void main(String[] args) {
+	ArrayList<String> list = new ArrayList<String>();
+	list.add("Su Su");
+	list.add("Aung Aung");
+	
+	String names[] = {"Hla Hla","Thida","Nilar","Moe Moe"};
+	
+	// change names array to list
+	List<String> lst = Arrays.asList(names);
+	// List<interface. => ArrayList extends List => add is ArrayList method
+	
+	list.addAll(lst);
+	
+	for(int i=0; i<list.size(); i++) {
+		System.out.println("Array List :"+list.get(i));
+	}
+	
+	if(list.contains("Thida")) {
+		System.out.println("It exit.");
+		list.remove("Thida");
+	}
+	else {
+		System.out.println("It is not exit");
+	}
+}
+}

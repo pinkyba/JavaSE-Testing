@@ -1,0 +1,28 @@
+package ArrayListAssignment;
+
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.Collections;
+import java.util.*;
+
+public class CollectionAssignment {
+public static void main(String[] args) {
+	String stuName;
+	
+	ArrayList<String> nameList = new ArrayList<String>();
+	String names[] = {"Hla Hla","Thida","Nilar","Moe Moe", "Kyaw Kyaw", "Aung Aung", "Htet Htet", "Zay Gyi"};
+	
+	// change names array to array list
+	List<String> lst = Arrays.asList(names);
+	
+	nameList.addAll(lst);
+	System.out.println(lst);
+	
+	Collections.sort("Original array list: "+lst);
+	System.out.println("Sorted array list: "+lst);
+	
+	Scanner input = new Scanner(System.in);
+	System.out.print("Enter student name you want to search: ");
+	stuName = 
+}
+}

@@ -1,0 +1,11 @@
+package javainterface;
+
+public class Testing {
+public static void main(String[] args) {
+	//
+	
+	People p = new Student();
+	//p.showData();
+	People.showData();
+}
+}

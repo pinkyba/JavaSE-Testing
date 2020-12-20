@@ -1,0 +1,40 @@
+package inheritance_assignment;
+
+import java.util.Scanner;
+public class Employee {
+private int empId;
+private String name;
+private String address;
+public Employee()
+{
+	
+}
+public int getEmpId() {
+	return empId;
+}
+public void setEmpId(int empId) {
+	this.empId = empId;
+}
+public String getName() {
+	return name;
+}
+public void setName(String name) {
+	this.name = name;
+}
+public String getAddress() {
+	return address;
+}
+public void setAddress(String address) {
+	this.address = address;
+}
+public void initializeInfo() {
+	Scanner input = new Scanner(System.in);
+	System.out.println("Enter Id: ");
+	empId = input.nextInt();
+	System.out.println("Enter name: ");
+	name = input.nextLine();
+	System.out.println("Enter Address: ");
+	address = input.nextLine();
+	input.close();
+	}
+}

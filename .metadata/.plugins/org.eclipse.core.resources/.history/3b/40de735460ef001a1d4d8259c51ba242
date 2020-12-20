@@ -1,0 +1,15 @@
+package String_Assignment;
+
+public class Assignment2 {
+
+	public static void main(String[] args) {
+		String p = "Natural language processing (NLP) is concerned with enabling.computers to interpret, analyze, and approximate the generation of human speech. Typically, this would. refer to tasks such as generating responses to questions, translating languages. identifying languages, summarizing documents, understanding the sentiment of text, spell checking, speech recognition, and many other tasks. The field is at the intersection of linguistics, AI, and computer science.";
+		
+		String arr[] = p.split(" ");
+		System.out.println("No of Total Words: "+arr.length);
+		
+		String arr1[] = p.split(". ");
+		System.out.println("No of sentence: "+arr1.length);
+	}
+
+}

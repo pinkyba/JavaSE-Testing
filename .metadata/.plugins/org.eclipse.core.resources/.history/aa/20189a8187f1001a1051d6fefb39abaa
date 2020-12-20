@@ -1,0 +1,28 @@
+import java.util.*;
+public class JavaHashMap {
+public static void main(String[] args) {
+	//non-generic collection
+	HashMap map = new HashMap();
+	map.put("Kyaw Kyaw", 200);
+	map.put(20000, "Aung Aung");
+	
+	Object o = map.get("Kyaw Kyaw");
+	int mark = (int) map.get("Kyaw Kyaw");
+	System.out.println(mark);
+	
+	String name = (String) map.get(20000);
+	System.out.println(name);
+	
+	//generic collection
+	HashMap<String, Integer> hashMap = new HashMap<String, Integer>();
+	hashMap.put("Aung", 1);
+	hashMap.put("Hla Hla", 2);
+	hashMap.put("Moe", 10);
+	hashMap.put("Aung", 20);
+	System.out.println(hashMap.get("Aung"));
+	
+	if (hashMap.containsKey("Hla Hla")) {
+		System.out.println("Data is found");
+	}
+}
+}

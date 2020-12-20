@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">&#x0A;<refactoring comment="Delete resource &apos;String_Assignment&apos;" deleteContents="false" description="Delete resource &apos;String_Assignment&apos;" element1="/String_Assignment" flags="7" id="org.eclipse.ltk.core.refactoring.delete.resources" resources="1" stamp="1599286435540"/>&#x0A;<refactoring comment="Delete resource &apos;04_Java_Abstraction&apos;" deleteContents="false" description="Delete resource &apos;04_Java_Abstraction&apos;" element1="/04_Java_Abstraction" flags="7" id="org.eclipse.ltk.core.refactoring.delete.resources" resources="1" stamp="1599312420720"/>
+</session>

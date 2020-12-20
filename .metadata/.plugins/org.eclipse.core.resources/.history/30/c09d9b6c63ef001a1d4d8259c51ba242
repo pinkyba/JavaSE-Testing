@@ -1,0 +1,35 @@
+package String_Assignment;
+
+import java.util.Scanner;
+
+public class Assignment3 {
+
+	public static void main(String[] args) {
+		String s;
+		Scanner input = new Scanner(System.in);
+		String tense = "";
+		
+		System.out.println("Enter a sentence: ");
+		s = input.nextLine();
+		
+		if (s.endsWith("?")) {
+		String str[] = s.split(" ");
+		for (int i=0; i<str.length; i++) {
+			if(str[i] == "did" || str[i] == "was" || str[i] == "were" || str[i] == "could") {
+				System.out.println("ok");
+				tense = "past";
+			}
+		}
+		if(tense == "present") {
+			System.out.println("This sentence is present tense.");
+		}
+		else {
+			System.out.println("This sentence is past tense");
+		}
+		}
+		else {
+			System.out.println("This sentence is not question.");
+		}
+	}
+
+}

@@ -1,0 +1,30 @@
+package inheritance_assignment;
+
+public class Testing {
+public static void main(String[] args) {
+	Employee emp[] = new Employee[5];
+	Staff staff = new Staff();
+	Teacher teacher = new Teacher();
+	
+	emp[0] = teacher;
+	emp[1] = teacher;
+	emp[2] = teacher;
+	emp[3] = staff;
+	emp[4] = staff;
+	
+	System.out.println("Teacher Data");
+	emp[0].initializeInfo();	
+	emp[1].initializeInfo();	
+	emp[2].initializeInfo();
+	
+	System.out.println("Staff Data");
+	emp[3].initializeInfo();	
+	emp[4].initializeInfo();
+	
+	
+	emp[0].displayInformation();
+	emp[1].displayInformation();
+	emp[2].displayInformation();
+	emp[3].displayInformation();
+	emp[4].displayInformation();
+}

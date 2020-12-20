@@ -1,0 +1,12 @@
+
+public class StudentTesting {
+public static void main(String[] args) throws InvalidMarkException {
+	Student s = new Student();
+	s.mark = 120;
+	s.rno = 1;
+	s.name = "Aung Aung";
+	s.checkMark();
+	
+	System.out.println("Valid Mark.");
+}
+}

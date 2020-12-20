@@ -1,0 +1,8 @@
+package CollectionAssignment;
+
+public class Student {
+private int rno;
+private String name;
+
+
+}

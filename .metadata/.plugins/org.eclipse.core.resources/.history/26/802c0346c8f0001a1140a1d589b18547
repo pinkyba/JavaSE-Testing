@@ -1,0 +1,13 @@
+
+public class StudentTesting {
+public static void main(String[] args) {
+	
+	try {
+		
+	}
+	catch(InvalidMarkException e) {
+		System.out.println("Mark must be 0 and 100");
+		System.out.println("Your mark: "+s.mark);
+	}
+}
+}

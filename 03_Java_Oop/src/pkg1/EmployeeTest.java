@@ -1,0 +1,39 @@
+package pkg1;
+
+public class EmployeeTest {
+
+	public static void main(String[] args) {
+		Employee emp1 = new Employee("Aung", "Ygn", 1);
+		
+		/*//Shallow copy
+		System.out.println("Name: "+emp1.getName());
+		
+		Employee emp2 = emp1;
+		emp1.setName( "Naung");
+		System.out.println("Emp2 name: "+emp2.getName());
+		
+		System.out.println("Name of emp2: "+ emp2.getName());*/
+		
+		// Deep Copy
+		//Employee emp2 = new Employee();
+		
+		// Deep Copy
+		Employee emp2 = null;
+		emp2.setAddress(emp1.getAddress());
+		emp2.setName(emp1.getName());
+		
+		System.out.println("Name of emp2: "+emp2.getName());
+		
+		emp1.setName("Su Kyi");
+		System.out.println("Name of emp1: "+emp1.getName());
+		System.out.println("Name of emp2: "+emp2.getName());
+		
+		/*int num1 = 100;
+		int num2 = num1;
+		System.out.println("Num1: "+num1+", Num2: "+num2);
+		
+		num1 = 200;
+		System.out.println("Num1: "+num1+", Num2: "+num2)*/
+	}
+
+}

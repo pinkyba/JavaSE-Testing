@@ -1,0 +1,44 @@
+package CollectionAssignment;
+
+import java.util.*;
+
+public class CollectionWithSet {
+	
+	public static void main(String[] args) {
+		Set<Student> hashSet = new HashSet<Student>(); 
+		
+		Scanner sc = new Scanner(System.in);
+		for(int i=0; i<3; i++) {
+			Student s = new Student();
+			System.out.print("Enter roll no: ");
+			s.setRno(sc.nextInt());
+			sc.nextLine();
+			System.out.print("Enter name: ");
+			s.setName(sc.nextLine());
+			hashSet.add(s);
+		}
+		System.out.println("------Student List------");
+		
+		Student[] arr = hashSet.toArray( new Student[hashSet.size()] );
+		for (int i=0; i<arr.length; i++) {
+			System.out.print("Roll no: "+arr[i].getRno());
+			System.out.print("Name: "+arr[i].getName());
+			System.out.println();
+		}
+		int tmp;
+		
+        for (int i=0; i<arr.length; i++) {
+        	if(i < arr.length-1) {
+        	if(arr[i+1].getRno() < arr[i].getRno()) {
+        		tmp = arr[i].getRno();
+        		arr[i].setRno(arr[i+1].getRno());	
+        		arr[i+1].setRno(tmp);
+        		//System.out.println("Test "+arr[i].getRno());
+        	}}
+        }
+        for (int i=0; i<arr.length; i++) {
+        	System.out.print("Roll no: "+arr[i].getRno());
+        	System.out.println(" Name: "+arr[i].getName());
+        }
+    } 
+}

@@ -1,0 +1,16 @@
+package pkg1;
+
+public class EmpTest {
+	public static void main(String[] args) {
+	Employee emp = new Employee(); //create object
+	emp.setEmpId(1);
+	emp.setName("Su Su");
+	emp.setPassword("aung");
+	emp.setGender("female");
+	
+	System.out.println("empId: "+emp.getEmpId());
+	System.out.println("empName: "+emp.getName());
+	System.out.println("Password: "+emp.getPassword());
+	System.out.println("Gender: "+emp.getGender());
+	}
+}

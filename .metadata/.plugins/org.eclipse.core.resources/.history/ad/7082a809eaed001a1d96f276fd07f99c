@@ -1,0 +1,66 @@
+package pkg1;
+
+import java.util.Scanner;
+
+public class Teacher extends Employee{
+private int salary;
+private String rank;
+
+/*// always build parent class constructor in every child class
+public Teacher()
+{
+	super("","",0);
+}
+
+public Teacher(String name, String add, int id, int salary, String rank)
+{
+	super(name, add, id);
+	this.salary = salary;
+	this.rank = rank;
+	
+}
+*/
+public int getSalary() {
+	return salary;
+}
+
+public void setSalary(int salary) {
+	this.salary = salary;
+}
+
+public String getRank() {
+	return rank;
+}
+
+public void setRank(String rank) {
+	this.rank = rank;
+}
+
+// create override method in order to both access proterties of employee and teacher class
+public void displayInformation() {
+	//to access displayInformation method of parent class(Employee)
+	super.displayInformation();
+	
+	
+	System.out.println("Rank: "+rank);
+	System.out.println("Salary: "+salary);
+}
+
+public void initializeInfo() {	
+	//to access initializeInfo method of parent class(Employee)
+	super.initializeInfo();
+	
+	Scanner input = new Scanner(System.in);
+	System.out.print("Enter Id: ");
+	
+	
+	input.close();
+	}
+
+/*//Funtion overide
+public void displayInformation() {
+	System.out.println("EmpId: "+this.getEmpId());
+	System.out.println("Name: "+this.getName());
+	System.out.println("Address: "+this.getAddress());
+}*/
+}

@@ -1,0 +1,36 @@
+package inheritance_assignment;
+
+import java.util.Scanner;
+public class Teacher extends Employee{
+	private int salary;
+	private String rank;
+	public int getSalary() {
+		return salary;
+	}
+	public void setSalary(int salary) {
+		this.salary = salary;
+	}
+	public String getRank() {
+		return rank;
+	}
+	public void setRank(String rank) {
+		this.rank = rank;
+	}
+	public void displayInformation() {
+		//to access displayInformation method of parent class(Employee)
+		super.displayInformation();
+			
+		System.out.println("Rank: "+rank);
+		System.out.println("Salary: "+salary);
+	}
+	public void initializeInfo() {	
+		//to access initializeInfo method of parent class(Employee)
+		super.initializeInfo();
+		
+		Scanner input = new Scanner(System.in);
+		System.out.print("Enter Id: ");
+		
+		
+		input.close();
+		}
+}
